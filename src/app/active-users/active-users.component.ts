@@ -5,10 +5,10 @@ import { UserService } from '../users.service';
 @Component({
   selector: 'app-active-users',
   templateUrl: './active-users.component.html',
-  styleUrls: ['./active-users.component.css']
+  styleUrls: ['./active-users.component.css'],
 })
 export class ActiveUsersComponent implements OnInit {
-  users: string[];
+  users: string[] = [];
 
   constructor(private userService: UserService) {}
 
